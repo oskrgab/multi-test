@@ -1,0 +1,12 @@
+name: myenv
+channels:
+  - conda-forge
+channel_priority: strict
+dependencies:
+  - python=3.11
+  - pandas
+  - notebook
+  - sympy
+  - scipy
+  - geopy
+  - matplotlib

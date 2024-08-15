@@ -1,0 +1,20 @@
+{
+    "name": "Python Dev Container",
+    "build": {
+      "dockerfile": "../Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "python.defaultInterpreterPath": "/opt/conda/envs/myenv/bin/python",
+                "jupyter.notebookFileRoot": "${workspaceFolder}"
+            },
+            "extensions": [
+                "ms-python.python",
+                "ms-toolsai.jupyter"
+            ]
+        }
+    },
+    "postCreateCommand": "conda activate myenv",
+    "forwardPorts": [8000]
+  }
